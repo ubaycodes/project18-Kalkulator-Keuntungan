@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Keuntungan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator Keuntungan</h1>
+      <label for="modal">Modal Awal (Rp):</label>
+      <input type="number" id="modal" placeholder="Masukkan modal awal" />
+
+      <label for="pengeluaran">Pengeluaran untuk Barang (Rp):</label>
+      <input
+        type="number"
+        id="pengeluaran"
+        placeholder="Masukkan pengeluaran"
+      />
+
+      <label for="keuntungan">Total Keuntungan yang Diinginkan (Rp):</label>
+      <input type="number" id="keuntungan" placeholder="Masukkan keuntungan" />
+
+      <label for="jumlahBarang">Jumlah Barang yang Dijual:</label>
+      <input
+        type="number"
+        id="jumlahBarang"
+        placeholder="Masukkan jumlah barang"
+      />
+      <div class="button-group">
+        <button onclick="hitung()">Hitung</button>
+        <button class="refresh" onclick="refresh()">Refresh</button>
+      </div>
+
+      <div class="result" id="hasil">
+        <!-- Hasil akan ditampilkan di sini -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
